@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 定义进度图背景图片 -->
+    <item
+        android:id="@android:id/background"
+        android:drawable="@drawable/base__view_progressbar_bg">
+    </item>
+    <!-- 定义进度图二级进度样式 -->
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <!-- 圆角设置为5dip -->
+                <corners android:radius="5dip" />
+
+                <!-- 颜色值，此处可以设置为渐变颜色，startColor为开始颜色，
+                centerColor为中间颜色，endColor为结束颜色 -->
+                <gradient
+                    android:angle="270"
+                    android:centerColor="#ffff9600"
+                    android:centerY="0.75"
+                    android:endColor="#ffff9600"
+                    android:startColor="#ffff9600" />
+            </shape>
+        </clip>
+    </item>
+    <!-- 定义进度图一级进度样式 -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <!-- 圆角设置为5dip -->
+                <corners android:radius="5dip" />
+
+                <!-- 颜色值，此处可以设置为渐变颜色，startColor为开始颜色，
+                centerColor为中间颜色，endColor为结束颜色 -->
+                <gradient
+                    android:angle="270"
+                    android:centerColor="#ffff5454"
+                    android:centerY="0.75"
+                    android:endColor="#ffff5454"
+                    android:startColor="#ffff5454" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>
